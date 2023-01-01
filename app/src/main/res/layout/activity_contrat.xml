@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design"
+    tools:context=".ContratActivity">
+
+
+    <TextView
+        android:id="@+id/titleContrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Contrat Client"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        android:ems="15"
+        android:hint="Taper nom,DateD "
+        android:textColorHint="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleContrat" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintStart_toEndOf="@+id/edSearch"
+        app:layout_constraintTop_toBottomOf="@+id/titleContrat"
+        app:srcCompat="@drawable/ic_search_24" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="312dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="204dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtDateD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Date Debut"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edDateD"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/forme2"
+            android:ems="8"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtDateD"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDateF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="Date Fin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateD" />
+
+        <EditText
+            android:id="@+id/edDateF"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/forme2"
+            android:ems="8"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtDateF"
+            app:layout_constraintTop_toBottomOf="@+id/edDateD" />
+
+        <TextView
+            android:id="@+id/txtRedevance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Redevance"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateF" />
+
+        <EditText
+            android:id="@+id/edRedevance"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/forme2"
+            android:ems="8"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtRedevance"
+            app:layout_constraintTop_toBottomOf="@+id/edDateF" />
+
+        <ImageButton
+            android:id="@+id/first"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/transgris"
+            android:src="@drawable/ic_first_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRedevance" />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/first"
+            app:layout_constraintTop_toBottomOf="@+id/edRedevance"
+            app:srcCompat="@drawable/ic_left_24" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/previous"
+            app:layout_constraintTop_toBottomOf="@+id/edRedevance"
+            app:srcCompat="@drawable/ic_baseline_arrow_right_24" />
+
+        <ImageButton
+            android:id="@+id/last"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/next"
+            app:layout_constraintTop_toBottomOf="@+id/edRedevance"
+            app:srcCompat="@drawable/ic_last_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titleDetailsEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+
+        android:text="Détails Client"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="310dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/forme2"
+        android:backgroundTint="@color/transgris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/txtnomCl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Client Name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EdnomCl"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/forme2"
+            android:ems="8"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtnomCl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnSearchCl"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/transgris"
+            app:layout_constraintStart_toEndOf="@+id/EdnomCl"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_search_24" />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Client Email"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtnomCl" />
+
+        <EditText
+            android:id="@+id/EdemailCl"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/forme2"
+            android:ems="10"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/txtemail"
+            app:layout_constraintTop_toBottomOf="@+id/EdnomCl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/add"
+        android:text="add"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSearch" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/delete"
+        android:text="update"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/update"
+        app:layout_constraintTop_toBottomOf="@+id/edSearch" />
+
+    <ImageButton
+        android:id="@+id/update"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/update"
+        android:text="update"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/edSearch" />
+
+    <TextView
+        android:id="@+id/idClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:text="Nom Client"
+        android:visibility="invisible"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDetailsEmp" />
+
+    <Button
+        android:id="@+id/bntCancel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3695E1"
+        android:ems="10"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/bntSave"
+        app:layout_constraintTop_toBottomOf="@+id/constraint2" />
+
+    <Button
+        android:id="@+id/bntSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3695E1"
+        android:ems="10"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

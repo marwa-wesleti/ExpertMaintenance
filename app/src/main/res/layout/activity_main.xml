@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Welcom"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginLeft="20dp"
+        android:text="WELCOM"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnClient"
+        android:layout_width="152dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="336dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/client" />
+
+    <TextView
+        android:id="@+id/txtclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Client"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtContrat"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClient" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnContrat"
+        android:layout_width="152dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="336dp"
+        app:layout_constraintLeft_toRightOf="@id/btnClient"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/contrat" />
+
+    <TextView
+        android:id="@+id/txtContrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Contrat"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnContrat"
+        app:layout_constraintTop_toBottomOf="@+id/btnContrat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
